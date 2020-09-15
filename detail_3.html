@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	EDGE Website by BrianMarx09
+	brianmarx09.github.io/edgewebsite/ @aztec_corp7
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>EDGE Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link rel="shortcut icon" href="favicon.png">
+		
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="index.html"><img width="20" src="favicon.png">&nbsp;EDGE Website</a></div>
+			<a href="#menu">Menu</a>			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<img width="120" src="favicon.png" alt="">
+						<p>Edge Channel</p>
+						<h2>Article</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<div class="align-left">
+								<!-- Menampilkan Hari, Bulan dan Tahun -->
+								<i class="fa fa-clock-o"></i>&nbsp; <script type='text/javascript'>
+									<!--
+									var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Oktober', 'November', 'Desember'];
+									var myDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+									var date = new Date();
+									var day = date.getDate();
+									var month = date.getMonth();
+									var thisDay = date.getDay(),
+										thisDay = myDays[thisDay];
+									var yy = date.getYear();
+									var year = (yy < 1000) ? yy + 1900 : yy;
+									//document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+									document.write(thisDay + ', ' + months[month] + ' ' + day + ' ' + ' ' + year);
+									//-->
+								</script> | 	<!-- Menampilkan Jam (Aktif) -->
+							<span id="clock"></span>
+								<script type="text/javascript">
+								<!--
+								function showTime() {
+									var a_p = "";
+									var today = new Date();
+									var curr_hour = today.getHours();
+									var curr_minute = today.getMinutes();
+									var curr_second = today.getSeconds();
+									if (curr_hour < 12) {
+										a_p = "AM";
+									} else {
+										a_p = "PM";
+									}
+									if (curr_hour == 0) {
+										curr_hour = 12;
+									}
+									if (curr_hour > 12) {
+										curr_hour = curr_hour - 12;
+									}
+									curr_hour = checkTime(curr_hour);
+									curr_minute = checkTime(curr_minute);
+									curr_second = checkTime(curr_second);
+								 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+									}
+						 
+								function checkTime(i) {
+									if (i < 10) {
+										i = "0" + i;
+									}
+									return i;
+								}
+								setInterval(showTime, 500);
+								//-->
+								</script>
+							<p><i class="fa fa-pencil"></i>&nbsp; Posted by: <b>Author</b></p>
+							</div>
+							<header class="align-center">
+								<img width="476" src="2.jpg">
+								<p>Android</p>
+								<h2>Cara Menghapus Dual Boot OS Linux dengan EasyBCD</h2>
+							</header>
+							<b>Pada video ini saya memberikan tutorial cara menghapus Dual Boot sistem operasi pada Linux dan Windows.</b>
+							<p>In this video I want to share a tutorial on how to remove Dual Boot operating systems on Linux and Windows.</p>
+
+							<b>Distro Linux yang saya hapus dual disini adalah Lubuntu 16.04 (LTS). Caranya dengan menggunakan software EasyBCD, bertujuan agar tidak terjadi error pada grub rescue partition pada laptop kalian, sehingga kita tidak perlu lagi untuk membuat bootable flash di USB.</b>
+							<p>The Linux distro that I dual removed here is Lubuntu 16.04 (LTS). You do this by using EasyBCD software, aiming to prevent errors in the Grub rescue partition on your laptop, so that we no longer need to make a bootable flash on USB.</p>
+							<b>Maka, jika kalian sudah mengunduh softwarenya, kalian tinggal install saja softwarenya (agar lebih jelas panduan penginstallannya diharapkan kalian lihat saja pada video tutorial yang saya berikan, agar kalian lebih mengerti cara penginstallan pada software EasyBCD-nya), jika kalian sudah menginstall softwarenya, tahap selanjutnya adalah kalian buka software EasyBCD-nya lalu kalian cari BCD Deployment pada kategori EasyBCD Toolbox disebelah kiri dan klik BCD Deployment-nya.</b>
+							<p>So, if you have downloaded the software, all you have to do is install the software (so that the installation guide is clearer, hopefully you can just look at the video tutorial that I provide, so that you better understand how to install the EasyBCD software), if you have installed the software, step next is you open the EasyBCD software then you look for BCD Deployment in the EasyBCD Toolbox category on the left and click on the BCD Deployment.</p>
+							<b>Selanjutnya jika kalian sudah mengklik kategori BCD Deployment, kalian klik tombol Write MBR, fungsinya itu untuk membuat MBR pada OS urutan Pertama kalian, yaitu Microsoft Windows jika kalian pernah membuat dual boot OS dengan Linux.</b>
+              <p>Next, if you have clicked on the BCD Deployment category, you click the Write MBR button, its function is to create an MBR on your first OS, namely Microsoft Windows if you have ever made a dual boot OS with Linux.</p>
+              <p>Tahap terakhir, jika kalian sudah mengklik tombol Write MBR pada BCD Deployment-nya, kalian tinggal restart PC/Laptop kalian agar kalian bisa melihat efeknya setelah kalian menulis ulang MBR pada OS PC/Laptop kalian.</p>
+              <b>The last stage, if you have clicked the Write MBR button on the BCD Deployment, you just need to restart your PC / Laptop so you can see the effect after you rewrite the MBR on your PC / Laptop OS.</b>
+              <b>Jika kalian masih bingung dengan tutorial yang disini, kalian juga bisa tonton videonya disini</b>
+							<p>If you are still confused with the tutorial here, you can also watch the video here</p>
+							<center><i style="font-size: 56px" class="fa fa-arrow-circle-down"></i></center>
+							<center><iframe width="560" height="315" src="https://www.youtube.com/watch?v=DNSxJ_-drDM&t=72s" frameborder="0" allow="autoplay; encrypted-media allow fullscreen"></iframe></center>
+
+							<br>
+							<b>Jika menurut kalian video tutorial ini bermanfaat untuk kalian, jangan lupa untuk like videonya, comment, dan share videonya agar bisa bermanfaat untuk kalian semua, dan jangan lupa juga untuk klik Subscribe channel ini agar channel ini terus berkembang dan membuat konten tutorial menarik dan bermanfaat lainnya. Terimakasih :)</b>
+							<p>If you think this video tutorial is useful for you, don't forget to like the video, comment, and share the video so that it can be useful for all of you, and don't forget to also click Subscribe to this channel so that this channel continues to grow and make other interesting and useful tutorial content . Thank you :)</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://facebook.com/Azure" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://instagram.com/aztec_corp7" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UC7hWVXyiKs8LMwMjmRQz9tQ" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					Copyright &copy; 2020, EDGE Website. All rights reserved.
+					<br>
+					Developed & Designed by <a style="font-size: 15px; text-decoration: none" href="index.html"><b>BrianMarx09</b></a>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
